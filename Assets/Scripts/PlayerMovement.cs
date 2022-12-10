@@ -6,11 +6,26 @@ public class PlayerMovement : MonoBehaviour
 {
 
     public Transform[] allChildrenTransforms;
+    public Material mat1;
+    public Vector3 newPositions;
+    public Quaternion newQuaternions;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        {
+            foreach (var children in allChildrenTransforms)
+            {
+                Vector3 tempPos = children.position;
+                Quaternion tempRot = children.rotation;
+                children.SetParent(transform);
+                children.position = tempPos;
+                children.rotation = tempRot;
+            }
+        }
+        transform.position = newPositions;
+        Debug.Log("yes");
+        transform.rotation = newQuaternions;
     }
 
     // Update is called once per frame
@@ -32,6 +47,7 @@ public class PlayerMovement : MonoBehaviour
                 children.position = tempPos;
                 children.rotation = tempRot;
             }
+
 
         }
 
