@@ -1,24 +1,9 @@
 fileFormatVersion: 2
-guid: dce1f590bafb01344bdc835abae37463
+guid: 33230f6adfb654d46a7d61cebde2da24
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: BlackMetal1
-    second: {fileID: 2100000, guid: 921a4c912578124409ec0dfafb71dcd0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Walls
-    second: {fileID: 2100000, guid: f4c3914eb70aa3d43bccd42b1ee308ad, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Wood1
-    second: {fileID: 2100000, guid: 9333de6c80e3e07469f9f3cee7c5868a, type: 2}
+  externalObjects: {}
   materials:
     materialImportMode: 2
     materialName: 0

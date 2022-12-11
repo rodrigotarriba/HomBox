@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class RotateAutomatically : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+
+    public Transform referenceTransform;
+
 
     // Update is called once per frame
     void Update()
     {
-        
+        float rotationAmount = Time.deltaTime / 5f * 360f;
+
+        // Rotate the shape around the reference transform's y-axis
+        transform.RotateAround(referenceTransform.position, referenceTransform.up, rotationAmount);
     }
 }
